@@ -105,7 +105,7 @@ Post-training evaluation includes:
 - Confusion matrix across all 101 classes
 - Identification of the top-5 most confused class pairs
 
-![Confusion Matrix](assets%20/confusion_matrix.png)
+![Confusion Matrix](assets/confusion_matrix.png)
 
 ---
 
@@ -120,7 +120,7 @@ pos_embed = model._orig_mod.embedding[0, 1:, :]  # (196, 512)
 sim = cosine_similarity(pos_embed[i], pos_embed).reshape(14, 14)
 ```
 
-![Positional Embedding Cosine Similarity](assets%20/pos_embedding.png)
+![Positional Embedding Cosine Similarity](assets/pos_embedding.png)
 
 ### 2. Attention Map Visualization
 
@@ -136,7 +136,7 @@ _, scores = MultiHeadAttention.attention(query, key, value, mask=None, dropout=N
 at = scores[0, head, patch_idx, 1:].reshape(14, 14)
 ```
 
-![Attention Visualization](assets%20/attention_visualization.png)
+![Attention Visualization](assets/attention_visualization.png)
 
 ---
 
