@@ -101,6 +101,8 @@ tensorboard --logdir logs_vit_food101
 
 The best model (highest validation accuracy) is saved to `models_vit_food101/vit_base_patch16_224_best.pt`.
 
+The best recorded validation accuracy from training was **76.5%** on the held-out Food101 split.
+
 Post-training evaluation includes:
 - Confusion matrix across all 101 classes
 - Identification of the top-5 most confused class pairs
